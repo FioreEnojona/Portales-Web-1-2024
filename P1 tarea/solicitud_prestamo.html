@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios en HTML</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>Prestamos Estudiantiles</h1>
+        <form action="solicitud_prestamo.html" method="get">
+            <label for="txtNombre">Nombre Completo</label>
+            <input
+                type="text"
+                name="name"
+                id="txtNombre"
+                placeholder="Nombre Completo"
+                required
+            />
+            <br/>
+            <label for="txtEmail">Dirección de Correo Electrónico</label>
+            <input
+                type="email"
+                maxlength="128"
+                name="email"
+                id="txtEmail"
+                placeholder="correo@lectro.nico"
+                required
+            />
+            <br/>
+            <label for="txtnumero">Número de teléfono </label>
+            <input
+                type="text"
+                name="numero"
+                id="txtnumero"
+                placeholder="Telefono"
+                required
+            />
+            <br/>
+            <label for="txtdireccion">Dirección actual</label>
+            <input
+                type="text"
+                name="direccion"
+                id="txtdireccion"
+                placeholder="Direccion actual"
+                required
+            />
+            <br/>
+            <label for="txtciudad">Ciudad</label>
+            <input
+                type="text"
+                name="ciudad"
+                id="txtciudad"
+                placeholder="Ciudad"
+                required
+            />
+            <br/>
+            <label>Estado</label>
+            <select name="estado" id="selectestado">
+                <option value="sol">Soltero</option>
+                <option value="cas">Casado</option>
+                <option value="div">Divorciado</option>
+                <option value="uni">Union Libre</option>
+            </select>
+            <br/>
+            <label for="txtcodigo">Codigo Postal</label>
+            <input
+                type="text"
+                name="postal"
+                id="txtcodigo"
+                placeholder="Codigo Postal"
+                required
+            />
+            <br/>
+            <label>Nivel de Educación </label><br/>
+
+            <label>Opciones de Color</label>
+            <input type="radio" value="1" name="preparatoria" id="opcPreparatoria" />
+            <label for="opcPreparatoria">Preparatoria</label> 
+            &nbsp;
+            <input type="radio" value="1" name="licenciatura" id="opcLicenciatura" />
+            <label for="opcLicenciatura">Licenciatura</label> 
+            &nbsp;
+            <input type="radio" value="1" name="maestria" id="opcMaestria" />
+            <label for="opcMaestria">Maestría</label> 
+            &nbsp;
+            <input type="radio" value="1" name="doctorado" id="opcDoctorado" />
+            <label for="opcDoctorado">Doctorado</label>
+            <br/>
+            <label>Programa de Estudio</label><br/>
+            <input type="radio" value="1" name="computacion" id="opccompu" />
+            <label for="opccompu">Ciencias de la Computación</label> <br/>
+            <input type="radio" value="1" name="ingenieria" id="opcinge" />
+            <label for="opcinge">Ingeniería</label> <br/>
+            <input type="radio" value="1" name="economia" id="opceco" />
+            <label for="opceco">Economía</label> <br/>
+            <input type="radio" value="1" name="artes" id="opcarte" />
+            <label for="opcarte">Artes</label> <br/>
+            <input type="radio" value="1" name="otro" id="opcotro" />
+            <label for="opcotro">Otro</label> <br/>
+            <br/>
+            <label for="txtmonto">Monto del préstamo solicitado</label>
+            <input
+                type="text"
+                name="monto"
+                id="txtmonto"
+                placeholder="Monto.."
+                required
+            />
+            <br/>
+            <label for="txtrazon">Razón para solicitar el préstamo</label>
+            <br/>
+            <textarea
+                name="razon"
+                id="txtrazon"
+                placeholder="Explique porque quiere el prestamo"
+            ></textarea>
+            <br/>
+            <button type="submit" name="btnEnviar" value="Btn1">Enviar</button>
+
+          
+
+
+
+        </form>
+    </body>
+</html>
